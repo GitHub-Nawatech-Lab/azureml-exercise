@@ -13,3 +13,4 @@ xgboost
 pyproj
 math
 openpyxl
+azure-ai-ml['mount']
