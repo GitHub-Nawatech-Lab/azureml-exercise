@@ -10,7 +10,7 @@ This workshop is structured to provide clear, step-by-step guidance. Follow thes
 
 Rest assured, every step of the exercise is carefully laid out to support your progress.
 
-## Use Case 1: Predicting Geothermal Characteristics in Colombia
+## Use Case: Predicting Geothermal Characteristics in Colombia
 
 ### Objectives
 
