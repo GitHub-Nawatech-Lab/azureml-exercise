@@ -22,7 +22,7 @@ This project utilizes a blend of geospatial data, geophysical information, and g
 
 ### Dataset Overview
 
-Each column in the dataset is explained below:
+The dataset used in this project is normalized, ensuring that all features have been scaled to a similar range, which is crucial for effective machine learning model training. Each column in the dataset is explained below:
 
 1. **Latitude**: Specifies the north-south position of a point on the Earth's surface in degrees.
 2. **Longitude**: Specifies the east-west position of a point on the Earth's surface in degrees.
@@ -60,27 +60,33 @@ git clone https://github.com/GitHub-Nawatech-Lab/azureml-exercise.git
 ```
 
 ### 2. Upload to Azure Machine Learning
-- Sign in to Azure Portal: Access the Azure Portal and log in with your credentials.
-- Create an Azure Machine Learning Workspace: If you don’t have one already, follow the Azure Machine Learning documentation to set up a new workspace.
-- Upload the Repository: Navigate to your workspace and upload the cloned repository.
+- **Sign in to Azure Portal**: Access the Azure Portal and log in with your credentials.
+- **Create an Azure Machine Learning Workspace**: If you don’t have one already, follow the Azure Machine Learning documentation to set up a new workspace.
+- **Upload the Repository**: Navigate to your workspace and upload the cloned repository.
 
-### 3. Using Designer
-- Create a New Pipeline: Go to the Designer section in Azure Machine Learning Studio and initiate a new pipeline.
-- Drag and Drop Modules: Utilize the drag-and-drop interface to add data input, data transformation, and machine learning modules.
-- Configure Modules: Set up each module according to the specific requirements of the project.
-- Run the Pipeline: After configuring the pipeline, execute it to train and evaluate your model.
+### 3. Upload the Dataset to Data Assets
+- Navigate to the Datasets section within your Azure Machine Learning workspace.
+- Click on **+ Create Dataset** and select From local files.
+- Upload the `normalized_data_minimax.csv` file located in the data folder of the cloned repository.
+- Complete the dataset registration process by providing a name, description, and ensuring the correct format is selected for the data.
 
-### 4. Using AutoML
-- Create a New AutoML Experiment: In Azure Machine Learning Studio, navigate to the Automated ML section and start a new experiment.
-- Select Dataset: Choose the dataset located in the data folder.
-- Configure Experiment: Set the target column to the geothermal gradient and adjust other settings as necessary.
-- Run the Experiment: Launch the AutoML experiment to automatically train and evaluate multiple models.
+### 4. Using Designer
+- **Create a New Pipeline**: Go to the Designer section in Azure Machine Learning Studio and initiate a new pipeline.
+- **Drag and Drop Modules**: Utilize the drag-and-drop interface to add data input, data transformation, and machine learning modules.
+- **Configure Modules**: Set up each module according to the specific requirements of the project.
+- **Run the Pipeline**: After configuring the pipeline, execute it to train and evaluate your model.
 
-### 5. Using Notebooks
-- Install Necessary Libraries: Open the terminal in Azure Machine Learning Studio and run the following command:
+### 5. Using AutoML
+- **Create a New AutoML Experiment**: In Azure Machine Learning Studio, navigate to the Automated ML section and start a new experiment.
+- **Select Dataset**: Choose the dataset you uploaded to Data Assets.
+- **Configure Experiment**: Set the target column to the geothermal gradient and adjust other settings as necessary.
+- **Run the Experiment**: Launch the AutoML experiment to automatically train and evaluate multiple models.
+
+### 6. Using Notebooks
+- **Install Necessary Libraries**: Open the terminal in Azure Machine Learning Studio and run the following command:
 ```sh
 pip install -r requirements.txt
 ```
-- Open the Notebook: In Azure Machine Learning Studio, open the Model_V4.ipynb notebook.
-- Run Cells: Execute each cell to preprocess data, train the model, and evaluate the results.
-- Analyze Results: Review the outputs and visualizations to assess the model's performance.
+- **Open the Notebook**: In Azure Machine Learning Studio, open the `Model_V4.ipynb` notebook.
+- **Run Cells**: Execute each cell to preprocess data, train the model, and evaluate the results.
+- **Analyze Results**: Review the outputs and visualizations to assess the model's performance.
