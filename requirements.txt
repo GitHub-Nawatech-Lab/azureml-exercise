@@ -1,3 +1,5 @@
+azure-ai-ml
+azure-ai-ml['mount']
 geopandas
 geopy
 matplotlib
@@ -13,4 +15,6 @@ xgboost
 pyproj
 math
 openpyxl
-azure-ai-ml['mount']
+
+
+
