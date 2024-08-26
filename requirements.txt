@@ -1,5 +1,5 @@
 azure-ai-ml
-azure-ai-ml['mount']
+azure-ai-ml[mount]
 geopandas
 geopy
 matplotlib
