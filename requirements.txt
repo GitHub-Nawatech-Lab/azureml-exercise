@@ -1,6 +1,6 @@
 azure-ai-ml
 azure-ai-ml[mount]
-geopandas
+geopandas==0.13.2
 geopy
 matplotlib
 numpy
