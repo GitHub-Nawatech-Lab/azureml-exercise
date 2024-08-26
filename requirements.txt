@@ -13,7 +13,6 @@ tqdm
 rasterio
 xgboost
 pyproj
-math
 openpyxl
 
 
