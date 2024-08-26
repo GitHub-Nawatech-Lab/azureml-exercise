@@ -5,13 +5,13 @@ geopy
 matplotlib
 numpy
 numba
-pandas
+pandas==2.2.2
 seaborn
 shapely
 scikit-learn
 tqdm
 rasterio
-xgboost
+xgboost==2.1.1
 pyproj
 openpyxl
 
