@@ -83,10 +83,10 @@ git clone https://github.com/GitHub-Nawatech-Lab/azureml-exercise.git
 - **Run the Experiment**: Launch the AutoML experiment to automatically train and evaluate multiple models.
 
 ### 6. Using Notebooks
-- **Install Necessary Libraries**: Open the terminal in Azure Machine Learning Studio and run the following command:
+<!-- - **Install Necessary Libraries**: Open the terminal in Azure Machine Learning Studio and run the following command:
 ```sh
 pip install -r requirements.txt
-```
+``` -->
 - **Open the Notebook**: In Azure Machine Learning Studio, open the `Model_V4.ipynb` notebook.
 - **Run Cells**: Execute each cell to preprocess data, train the model, and evaluate the results.
 - **Analyze Results**: Review the outputs and visualizations to assess the model's performance.
